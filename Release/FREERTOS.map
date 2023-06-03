@@ -1,0 +1,758 @@
+Archive member included because of file (symbol)
+
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./LCD/LCD_program.o (__divmodsi4)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./FREERTOS/tasks.o (__do_copy_data)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./FREERTOS/croutine.o (__do_clear_bss)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              ./FREERTOS/queue.o (memcpy)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                              ./FREERTOS/tasks.o (memset)
+d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncpy.o)
+                              ./FREERTOS/tasks.o (strncpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+LCD_SEM             0x2               ./main2.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./LCD/LCD_program.o
+LOAD ./GIE/GIE_program.o
+LOAD ./FREERTOS/croutine.o
+LOAD ./FREERTOS/heap_1.o
+LOAD ./FREERTOS/list.o
+LOAD ./FREERTOS/port.o
+LOAD ./FREERTOS/queue.o
+LOAD ./FREERTOS/tasks.o
+LOAD ./FREERTOS/timers.o
+LOAD ./EXTI/EXTI_program.o
+LOAD ./DIO/DIO_program.o
+LOAD ./main.o
+LOAD ./main2.o
+LOAD d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x230a
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./LCD/LCD_program.o
+ .text          0x00000092        0x0 ./GIE/GIE_program.o
+ .text          0x00000092        0x0 ./FREERTOS/croutine.o
+ .text          0x00000092        0x0 ./FREERTOS/heap_1.o
+ .text          0x00000092        0x0 ./FREERTOS/list.o
+ .text          0x00000092        0x0 ./FREERTOS/port.o
+ .text          0x00000092        0x0 ./FREERTOS/queue.o
+ .text          0x00000092        0x0 ./FREERTOS/tasks.o
+ .text          0x00000092        0x0 ./FREERTOS/timers.o
+ .text          0x00000092        0x0 ./EXTI/EXTI_program.o
+ .text          0x00000092        0x0 ./DIO/DIO_program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 ./main2.o
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text          0x00000092        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncpy.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.LCD_voidSendCommond
+                0x00000092       0x36 ./LCD/LCD_program.o
+                0x00000092                LCD_voidSendCommond
+ .text.LCD_voidSendChar
+                0x000000c8       0x38 ./LCD/LCD_program.o
+                0x000000c8                LCD_voidSendChar
+ .text.LCD_voidInit
+                0x00000100       0x6c ./LCD/LCD_program.o
+                0x00000100                LCD_voidInit
+ .text.LCD_voidPrintString
+                0x0000016c       0x18 ./LCD/LCD_program.o
+                0x0000016c                LCD_voidPrintString
+ .text.LCD_voidSetCursorPostion
+                0x00000184       0x1a ./LCD/LCD_program.o
+                0x00000184                LCD_voidSetCursorPostion
+ .text.LCD_voidPrintNumber
+                0x0000019e      0x1e0 ./LCD/LCD_program.o
+                0x0000019e                LCD_voidPrintNumber
+ .text.LCD_voidSaveCustomCharater
+                0x0000037e       0x44 ./LCD/LCD_program.o
+                0x0000037e                LCD_voidSaveCustomCharater
+ .text.LCD_voidClear
+                0x000003c2       0x10 ./LCD/LCD_program.o
+                0x000003c2                LCD_voidClear
+ .text.GIE_voidEnableGlobleInterrupt
+                0x000003d2        0x8 ./GIE/GIE_program.o
+                0x000003d2                GIE_voidEnableGlobleInterrupt
+ .text.GIE_voidDisableGlobleInterrupt
+                0x000003da        0x8 ./GIE/GIE_program.o
+                0x000003da                GIE_voidDisableGlobleInterrupt
+ .text.xCoRoutineRemoveFromEventList
+                0x000003e2       0x4e ./FREERTOS/croutine.o
+                0x000003e2                xCoRoutineRemoveFromEventList
+ .text.vCoRoutineSchedule
+                0x00000430      0x1c0 ./FREERTOS/croutine.o
+                0x00000430                vCoRoutineSchedule
+ .text.vCoRoutineAddToDelayedList
+                0x000005f0       0x7a ./FREERTOS/croutine.o
+                0x000005f0                vCoRoutineAddToDelayedList
+ .text.xCoRoutineCreate
+                0x0000066a       0xf4 ./FREERTOS/croutine.o
+                0x0000066a                xCoRoutineCreate
+ .text.vPortFree
+                0x0000075e        0x2 ./FREERTOS/heap_1.o
+                0x0000075e                vPortFree
+ .text.vPortInitialiseBlocks
+                0x00000760        0xa ./FREERTOS/heap_1.o
+                0x00000760                vPortInitialiseBlocks
+ .text.xPortGetFreeHeapSize
+                0x0000076a       0x14 ./FREERTOS/heap_1.o
+                0x0000076a                xPortGetFreeHeapSize
+ .text.pvPortMalloc
+                0x0000077e       0x4e ./FREERTOS/heap_1.o
+                0x0000077e                pvPortMalloc
+ .text.vListInitialise
+                0x000007cc       0x20 ./FREERTOS/list.o
+                0x000007cc                vListInitialise
+ .text.vListInitialiseItem
+                0x000007ec        0x8 ./FREERTOS/list.o
+                0x000007ec                vListInitialiseItem
+ .text.vListInsertEnd
+                0x000007f4       0x52 ./FREERTOS/list.o
+                0x000007f4                vListInsertEnd
+ .text.vListInsert
+                0x00000846       0x6a ./FREERTOS/list.o
+                0x00000846                vListInsert
+ .text.vListRemove
+                0x000008b0       0x50 ./FREERTOS/list.o
+                0x000008b0                vListRemove
+ .text.pxPortInitialiseStack
+                0x00000900       0x90 ./FREERTOS/port.o
+                0x00000900                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x00000990       0x6a ./FREERTOS/port.o
+                0x00000990                xPortStartScheduler
+ .text.vPortEndScheduler
+                0x000009fa        0x2 ./FREERTOS/port.o
+                0x000009fa                vPortEndScheduler
+ .text.vPortYieldFromTick
+                0x000009fc       0xb6 ./FREERTOS/port.o
+                0x000009fc                vPortYieldFromTick
+ .text.__vector_7
+                0x00000ab2        0x6 ./FREERTOS/port.o
+                0x00000ab2                __vector_7
+ .text.vPortYield
+                0x00000ab8       0xb2 ./FREERTOS/port.o
+                0x00000ab8                vPortYield
+ .text.uxQueueMessagesWaiting
+                0x00000b6a       0x10 ./FREERTOS/queue.o
+                0x00000b6a                uxQueueMessagesWaiting
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000b7a        0x6 ./FREERTOS/queue.o
+                0x00000b7a                uxQueueMessagesWaitingFromISR
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000b80       0x10 ./FREERTOS/queue.o
+                0x00000b80                xQueueIsQueueEmptyFromISR
+ .text.xQueueIsQueueFullFromISR
+                0x00000b90       0x12 ./FREERTOS/queue.o
+                0x00000b90                xQueueIsQueueFullFromISR
+ .text.vQueueDelete
+                0x00000ba2       0x1c ./FREERTOS/queue.o
+                0x00000ba2                vQueueDelete
+ .text.xQueueReceiveFromISR
+                0x00000bbe       0x7e ./FREERTOS/queue.o
+                0x00000bbe                xQueueReceiveFromISR
+ .text.prvCopyDataToQueue
+                0x00000c3c       0x82 ./FREERTOS/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000cbe       0x50 ./FREERTOS/queue.o
+                0x00000cbe                xQueueGenericSendFromISR
+ .text.prvUnlockQueue
+                0x00000d0e       0x80 ./FREERTOS/queue.o
+ .text.xQueueGenericReceive
+                0x00000d8e      0x198 ./FREERTOS/queue.o
+                0x00000d8e                xQueueGenericReceive
+ .text.xQueueGenericSend
+                0x00000f26      0x148 ./FREERTOS/queue.o
+                0x00000f26                xQueueGenericSend
+ .text.xQueueCreate
+                0x0000106e       0xbe ./FREERTOS/queue.o
+                0x0000106e                xQueueCreate
+ .text.xQueueCreateCountingSemaphore
+                0x0000112c       0x18 ./FREERTOS/queue.o
+                0x0000112c                xQueueCreateCountingSemaphore
+ .text.xTaskIsTaskSuspended
+                0x00001144       0x28 ./FREERTOS/tasks.o
+                0x00001144                xTaskIsTaskSuspended
+ .text.vTaskSuspendAll
+                0x0000116c        0xc ./FREERTOS/tasks.o
+                0x0000116c                vTaskSuspendAll
+ .text.xTaskGetTickCount
+                0x00001178       0x16 ./FREERTOS/tasks.o
+                0x00001178                xTaskGetTickCount
+ .text.xTaskGetTickCountFromISR
+                0x0000118e        0xc ./FREERTOS/tasks.o
+                0x0000118e                xTaskGetTickCountFromISR
+ .text.uxTaskGetNumberOfTasks
+                0x0000119a        0x6 ./FREERTOS/tasks.o
+                0x0000119a                uxTaskGetNumberOfTasks
+ .text.vTaskSwitchContext
+                0x000011a0       0x84 ./FREERTOS/tasks.o
+                0x000011a0                vTaskSwitchContext
+ .text.vTaskSetTimeOutState
+                0x00001224       0x16 ./FREERTOS/tasks.o
+                0x00001224                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x0000123a       0x7c ./FREERTOS/tasks.o
+                0x0000123a                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x000012b6        0x8 ./FREERTOS/tasks.o
+                0x000012b6                vTaskMissedYield
+ .text.xTaskRemoveFromEventList
+                0x000012be       0x7e ./FREERTOS/tasks.o
+                0x000012be                xTaskRemoveFromEventList
+ .text.vTaskIncrementTick
+                0x0000133c      0x148 ./FREERTOS/tasks.o
+                0x0000133c                vTaskIncrementTick
+ .text.xTaskResumeFromISR
+                0x00001484       0x9c ./FREERTOS/tasks.o
+                0x00001484                xTaskResumeFromISR
+ .text.prvAddCurrentTaskToDelayedList
+                0x00001520       0x6e ./FREERTOS/tasks.o
+ .text.vTaskPlaceOnEventList
+                0x0000158e       0x58 ./FREERTOS/tasks.o
+                0x0000158e                vTaskPlaceOnEventList
+ .text.xTaskResumeAll
+                0x000015e6       0xf6 ./FREERTOS/tasks.o
+                0x000015e6                xTaskResumeAll
+ .text.vTaskResume
+                0x000016dc       0x92 ./FREERTOS/tasks.o
+                0x000016dc                vTaskResume
+ .text.vTaskSuspend
+                0x0000176e       0xa2 ./FREERTOS/tasks.o
+                0x0000176e                vTaskSuspend
+ .text.vTaskDelay
+                0x00001810       0x4e ./FREERTOS/tasks.o
+                0x00001810                vTaskDelay
+ .text.vTaskDelayUntil
+                0x0000185e       0x78 ./FREERTOS/tasks.o
+                0x0000185e                vTaskDelayUntil
+ .text.vTaskDelete
+                0x000018d6       0x9a ./FREERTOS/tasks.o
+                0x000018d6                vTaskDelete
+ .text.vTaskEndScheduler
+                0x00001970        0xc ./FREERTOS/tasks.o
+                0x00001970                vTaskEndScheduler
+ .text.prvIdleTask
+                0x0000197c       0x66 ./FREERTOS/tasks.o
+ .text.xTaskGenericCreate
+                0x000019e2      0x206 ./FREERTOS/tasks.o
+                0x000019e2                xTaskGenericCreate
+ .text.vTaskStartScheduler
+                0x00001be8       0x56 ./FREERTOS/tasks.o
+                0x00001be8                vTaskStartScheduler
+ .text.EXTI_voidEnable
+                0x00001c3e       0x24 ./EXTI/EXTI_program.o
+                0x00001c3e                EXTI_voidEnable
+ .text.EXTI_voidDisable
+                0x00001c62       0x24 ./EXTI/EXTI_program.o
+                0x00001c62                EXTI_voidDisable
+ .text.EXTI_voidTriggerEdge
+                0x00001c86       0x96 ./EXTI/EXTI_program.o
+                0x00001c86                EXTI_voidTriggerEdge
+ .text.__vector_1
+                0x00001d1c       0x52 ./EXTI/EXTI_program.o
+                0x00001d1c                __vector_1
+ .text.__vector_2
+                0x00001d6e       0x52 ./EXTI/EXTI_program.o
+                0x00001d6e                __vector_2
+ .text.__vector_3
+                0x00001dc0       0x52 ./EXTI/EXTI_program.o
+                0x00001dc0                __vector_3
+ .text.EXTI_voidSetCallBack
+                0x00001e12       0x2c ./EXTI/EXTI_program.o
+                0x00001e12                EXTI_voidSetCallBack
+ .text.DIO_voidSetPinDirection
+                0x00001e3e       0xe2 ./DIO/DIO_program.o
+                0x00001e3e                DIO_voidSetPinDirection
+ .text.DIO_voidSetPortDirection
+                0x00001f20       0x22 ./DIO/DIO_program.o
+                0x00001f20                DIO_voidSetPortDirection
+ .text.DIO_voidSetPinValue
+                0x00001f42       0xe2 ./DIO/DIO_program.o
+                0x00001f42                DIO_voidSetPinValue
+ .text.DIO_voidSetPortValue
+                0x00002024       0x22 ./DIO/DIO_program.o
+                0x00002024                DIO_voidSetPortValue
+ .text.DIO_voidTogglePin
+                0x00002046       0x6a ./DIO/DIO_program.o
+                0x00002046                DIO_voidTogglePin
+ .text.DIO_u8GetPinValue
+                0x000020b0       0x40 ./DIO/DIO_program.o
+                0x000020b0                DIO_u8GetPinValue
+ .text.DIO_u8GitPortValue
+                0x000020f0       0x24 ./DIO/DIO_program.o
+                0x000020f0                DIO_u8GitPortValue
+ .text.isr      0x00002114       0x18 ./main2.o
+                0x00002114                isr
+ .text.Task2    0x0000212c       0x3e ./main2.o
+                0x0000212c                Task2
+ .text.Task     0x0000216a       0x3e ./main2.o
+                0x0000216a                Task
+ .text.voidinitSystem
+                0x000021a8       0x36 ./main2.o
+                0x000021a8                voidinitSystem
+ .text.main     0x000021de       0x70 ./main2.o
+                0x000021de                main
+ .text.libgcc   0x0000224e       0x36 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000224e                __divmodsi4
+ .text.libgcc   0x00002284        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002284        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002284        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002284       0x44 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002284                __udivmodsi4
+ .text.avr-libc
+                0x000022c8       0x12 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x000022c8                memcpy
+ .text.avr-libc
+                0x000022da        0xe d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x000022da                memset
+ .text.avr-libc
+                0x000022e8       0x1e d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncpy.o)
+                0x000022e8                strncpy
+                0x00002306                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002306        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002306                exit
+                0x00002306                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002306        0x4 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000230a                _etext = .
+
+.data           0x00800060       0x2a load address 0x0000230a
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./LCD/LCD_program.o
+ .data          0x00800060        0x0 ./GIE/GIE_program.o
+ .data          0x00800060        0x0 ./FREERTOS/croutine.o
+ .data          0x00800060        0x0 ./FREERTOS/heap_1.o
+ .data          0x00800060        0x0 ./FREERTOS/list.o
+ .data          0x00800060        0x0 ./FREERTOS/port.o
+ .data          0x00800060        0x0 ./FREERTOS/queue.o
+ .data          0x00800060        0x5 ./FREERTOS/tasks.o
+ .data          0x00800065        0x0 ./FREERTOS/timers.o
+ .data          0x00800065        0x0 ./EXTI/EXTI_program.o
+ .data          0x00800065        0x0 ./DIO/DIO_program.o
+ .data          0x00800065        0x0 ./main.o
+ .data          0x00800065       0x22 ./main2.o
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .data          0x00800087        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncpy.o)
+ *(.data*)
+ .data.xNextTaskUnblockTime
+                0x00800087        0x2 ./FREERTOS/tasks.o
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080008a                . = ALIGN (0x2)
+ *fill*         0x00800089        0x1 00
+                0x0080008a                _edata = .
+                0x0080008a                PROVIDE (__data_end, .)
+
+.bss            0x0080008a      0x498
+                0x0080008a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080008a        0x0 ./LCD/LCD_program.o
+ .bss           0x0080008a        0x0 ./GIE/GIE_program.o
+ .bss           0x0080008a        0x0 ./FREERTOS/croutine.o
+ .bss           0x0080008a        0x0 ./FREERTOS/heap_1.o
+ .bss           0x0080008a        0x0 ./FREERTOS/list.o
+ .bss           0x0080008a        0x0 ./FREERTOS/port.o
+ .bss           0x0080008a        0x0 ./FREERTOS/queue.o
+ .bss           0x0080008a        0x0 ./FREERTOS/tasks.o
+ .bss           0x0080008a        0x0 ./FREERTOS/timers.o
+ .bss           0x0080008a        0x0 ./EXTI/EXTI_program.o
+ .bss           0x0080008a        0x0 ./DIO/DIO_program.o
+ .bss           0x0080008a        0x0 ./main.o
+ .bss           0x0080008a        0x0 ./main2.o
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .bss           0x0080008a        0x0 d:/programes/eclipse/eclipse_avr/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncpy.o)
+ *(.bss*)
+ .bss.pxCurrentCoRoutine
+                0x0080008a        0x2 ./FREERTOS/croutine.o
+                0x0080008a                pxCurrentCoRoutine
+ .bss.uxTopCoRoutineReadyPriority
+                0x0080008c        0x1 ./FREERTOS/croutine.o
+ .bss.xLastTickCount
+                0x0080008d        0x2 ./FREERTOS/croutine.o
+ .bss.xPassedTicks
+                0x0080008f        0x2 ./FREERTOS/croutine.o
+ .bss.xCoRoutineTickCount
+                0x00800091        0x2 ./FREERTOS/croutine.o
+ .bss.pxReadyCoRoutineLists
+                0x00800093       0x12 ./FREERTOS/croutine.o
+ .bss.xDelayedCoRoutineList1
+                0x008000a5        0x9 ./FREERTOS/croutine.o
+ .bss.xDelayedCoRoutineList2
+                0x008000ae        0x9 ./FREERTOS/croutine.o
+ .bss.pxDelayedCoRoutineList
+                0x008000b7        0x2 ./FREERTOS/croutine.o
+ .bss.pxOverflowDelayedCoRoutineList
+                0x008000b9        0x2 ./FREERTOS/croutine.o
+ .bss.xPendingReadyCoRoutineList
+                0x008000bb        0x9 ./FREERTOS/croutine.o
+ .bss.xNextFreeByte
+                0x008000c4        0x2 ./FREERTOS/heap_1.o
+ .bss.xHeap     0x008000c6      0x3e8 ./FREERTOS/heap_1.o
+ .bss.pxCurrentTCB
+                0x008004ae        0x2 ./FREERTOS/tasks.o
+                0x008004ae                pxCurrentTCB
+ .bss.xMissedYield
+                0x008004b0        0x1 ./FREERTOS/tasks.o
+ .bss.xNumOfOverflows
+                0x008004b1        0x1 ./FREERTOS/tasks.o
+ .bss.xTickCount
+                0x008004b2        0x2 ./FREERTOS/tasks.o
+ .bss.uxSchedulerSuspended
+                0x008004b4        0x1 ./FREERTOS/tasks.o
+ .bss.uxTopReadyPriority
+                0x008004b5        0x1 ./FREERTOS/tasks.o
+ .bss.uxMissedTicks
+                0x008004b6        0x1 ./FREERTOS/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x008004b7        0x1 ./FREERTOS/tasks.o
+ .bss.xSchedulerRunning
+                0x008004b8        0x1 ./FREERTOS/tasks.o
+ .bss.uxTasksDeleted
+                0x008004b9        0x1 ./FREERTOS/tasks.o
+ .bss.uxTaskNumber
+                0x008004ba        0x1 ./FREERTOS/tasks.o
+ .bss.uxTopUsedPriority
+                0x008004bb        0x1 ./FREERTOS/tasks.o
+ .bss.pxReadyTasksLists
+                0x008004bc       0x2d ./FREERTOS/tasks.o
+ .bss.xDelayedTaskList1
+                0x008004e9        0x9 ./FREERTOS/tasks.o
+ .bss.xDelayedTaskList2
+                0x008004f2        0x9 ./FREERTOS/tasks.o
+ .bss.pxDelayedTaskList
+                0x008004fb        0x2 ./FREERTOS/tasks.o
+ .bss.pxOverflowDelayedTaskList
+                0x008004fd        0x2 ./FREERTOS/tasks.o
+ .bss.xPendingReadyList
+                0x008004ff        0x9 ./FREERTOS/tasks.o
+ .bss.xTasksWaitingTermination
+                0x00800508        0x9 ./FREERTOS/tasks.o
+ .bss.xSuspendedTaskList
+                0x00800511        0x9 ./FREERTOS/tasks.o
+ .bss.INT0_Fptr
+                0x0080051a        0x2 ./EXTI/EXTI_program.o
+ .bss.INT1_Fptr
+                0x0080051c        0x2 ./EXTI/EXTI_program.o
+ .bss.INT2_Fptr
+                0x0080051e        0x2 ./EXTI/EXTI_program.o
+ *(COMMON)
+ COMMON         0x00800520        0x2 ./main2.o
+                0x00800520                LCD_SEM
+                0x00800522                PROVIDE (__bss_end, .)
+                0x0000230a                __data_load_start = LOADADDR (.data)
+                0x00002334                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800522        0x0
+                0x00800522                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800522                PROVIDE (__noinit_end, .)
+                0x00800522                _end = .
+                0x00800522                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(FREERTOS.elf elf32-avr)
+LOAD linker stubs
